@@ -3,10 +3,17 @@
     internal class Program
     {
         // Program om du inte visste det. Yes, good.
+
+        static void Afunction()
+        {
+            Console.WriteLine("Helloo");
+        }
+
         static void Main(string[] args)
         {
             // Du är i Main om du råkat gå vilse.
             {
+                
                 Console.WriteLine("=== Start av programmet ===");
 
                 // Exempel 1: try-catch-finally
@@ -15,7 +22,7 @@
                     Console.WriteLine("Försöker läsa fil och räkna...");
                     var path = Path.Combine(AppContext.BaseDirectory, "numbers.txt");
                     var result = ProcessFile(path);
-                  
+
                     Console.WriteLine($"\nResultat: {result}");
                 }
                 catch (FileNotFoundException ex)
@@ -45,6 +52,7 @@
                 }
 
                 Console.WriteLine("Programmet avslutas normalt.");
+                Console.WriteLine("Ha en trevlig dag");
             }
 
             // Exempel på metod som själv kastar ett undantag (throw)
@@ -78,7 +86,7 @@
                     // Vi kan välja att låta metoden "kasta upp" felet
                     throw; // När du i `catch` bara vill logga/analysera,
                            // men låta anroparen (t.ex. en högre nivå i applikationen)
-                           // bestämma hur man ska återhämta sig. 
+                           // bestämma hur man ska återhämta sig.
                 }
                 catch (Exception ex)
                 {
@@ -94,6 +102,11 @@
                     Console.WriteLine("finally i ProcessFile: StreamReader stängd.");
                 }
             }
+        }
+      
+        static void HelloWorld()
+        {
+            Console.WriteLine("Hello World!");
         }
     }
 }
