@@ -2,13 +2,16 @@
 {
     internal class Program
     {
+        // Program om du inte visste det. Yes, good.
 
         static void Afunction()
         {
             Console.WriteLine("Helloo");
         }
+
         static void Main(string[] args)
         {
+            // Du är i Main om du råkat gå vilse.
             {
                 
                 Console.WriteLine("=== Start av programmet ===");
@@ -100,6 +103,7 @@
                 }
             }
         }
+      
         static void HelloWorld()
         {
             Console.WriteLine("Hello World!");
