@@ -2,9 +2,15 @@
 {
     internal class Program
     {
+
+        static void Afunction()
+        {
+            Console.WriteLine("Helloo");
+        }
         static void Main(string[] args)
         {
             {
+                
                 Console.WriteLine("=== Start av programmet ===");
 
                 // Exempel 1: try-catch-finally
